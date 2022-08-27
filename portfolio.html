@@ -23,36 +23,39 @@
     <link rel="stylesheet" href="./css/modern-normalize.css" />
     <title>WebStudio</title>
     <link rel="stylesheet" href="./css/styles.css" />
-  </head>
-  <body>
-    <header class="header">
-      <nav class="header-nav">
-        <a class="logo" href="./index.html"><span>Web</span>Studio</a>
-        <ul class="header-nav-list list">
-          <li class="header-nav-item">
-            <a class="header-nav-link" href="./index.html">Студія</a>
+  <header class="header">
+      <div class="container header-container">
+        <nav class="header-nav">
+          <a class="header-logo logo" href="./index.html"><span>Web</span>Studio</a>
+          <ul class="header-nav-list list">
+            <li class="header-nav-item">
+              <a class="header-nav-link" href="./index.html">Студія</a>
+            </li>
+            <li class="header-nav-item portfolio-item">
+              <a class="header-nav-link" href="./portfolio.html">Портфоліо</a>
+            </li>
+            <li class="header-nav-item">
+              <a class="header-nav-link" href="">Контакти</a>
+            </li>
+          </ul>
+        </nav>
+        <div>
+        <ul class="header-auth">
+          <li>
+            <a class="header-link" href="mailto:info@devstudio.com">info@devstudio.com</a>
           </li>
-          <li class="header-nav-item portfolio-item">
-            <a class="header-nav-link" href="./portfolio.html">Портфоліо</a>
-          </li>
-          <li class="header-nav-item">
-            <a class="header-nav-link" href="">Контакти</a>
+          <li>
+            <a class="header-link" href="tel:+380961111111">+38 096 111 11 11</a>
           </li>
         </ul>
-      </nav>
-      <ul class="header-auth">
-        <li>
-          <a class="header-link" href="mailto:info@devstudio.com">info@devstudio.com</a>
-        </li>
-        <li>
-          <a class="header-link" href="tel:+380961111111">+38 096 111 11 11</a>
-        </li>
-      </ul>
+        </div>
+      </div>
     </header>
 
     <main>
       <!-- filters -->
       <section class="filters">
+        <div class="filters-container container">
         <h1 hidden>Портфоліо</h1>
         <ul class="filters-list">
           <li class="filters-item">
@@ -71,81 +74,145 @@
             <button class="filters-btn" type="button">Маркетинг</button>
           </li>
         </ul>
-
+           </div>
         <!--  projects -->
-
+         <div class="projects-container container">
         <ul class="projects-list">
           <li class="projects-item">
+            <article class="card">
+              <div class="card-thumb">
             <img src="./images/projects/img.jpg" alt="сторінка вебсайту" width="370" height="294" />
+            </div>
+            <div class="card-content">
             <h2 class="projects-title">Технокряк</h2>
             <p class="projects-subtitle">Веб-сайт</p>
+            </div>
+            </article>
           </li>
+
           <li class="projects-item">
+            <article class="card">
+              <div class="card-thumb">
             <img
               src="./images/projects/img-1.jpg"
               alt="постер на якоу зображені 2 баскетболіста"
               width="370"
               height="294"
             />
-            <h2 class="projects-title">Постер New Orlean vs Golden Star</h2>
+            </div>
+            <div class="card-content">
+             <h2 class="projects-title">Постер New Orlean vs Golden Star</h2>
             <p class="projects-subtitle">Дизайн</p>
+            </div>
+            </article>
           </li>
+
           <li class="projects-item">
+            <article class="card">
+              <div class="card-thumb">
             <img
               src="./images/projects/img-2.jpg"
               alt="логотип ресторану н якому зображена риба"
               width="370"
               height="294"
             />
+            </div>
+            <div class="card-content">
             <h2 class="projects-title">Ресторан Seafood</h2>
             <p class="projects-subtitle">Додаток</p>
+            </div>
+            </article>
           </li>
+
           <li class="projects-item">
+            <article class="card">
+              <div class="card-thumb">
             <img src="./images/projects/img-3.jpg" alt="навушники" width="370" height="294" />
+            </div>
+            <div class="card-content">
             <h2 class="projects-title">Проєкт Prime</h2>
             <p class="projects-subtitle">Маркетинг</p>
+            </div>
+            </article>
           </li>
+
           <li class="projects-item">
+            <article class="card">
+              <div class="card-thumb">
             <img src="./images/projects/img-4.jpg" alt="дві коробки" width="370" height="294" />
+            </div>
+            <div class="card-content">
             <h2 class="projects-title">Проєкт Boxes</h2>
             <p class="projects-subtitle">Додаток</p>
+            </div>
+            </article>
           </li>
+
           <li class="projects-item">
+            <article class="card">
+              <div class="card-thumb">
             <img
               src="./images/projects/img-5.jpg"
               alt="сторінка веб-сайту"
               width="370"
               height="294"
             />
+            </div>
+            <div class="card-content">
             <h2 class="projects-title">Inspiration has no Borders</h2>
             <p class="projects-subtitle">Веб-сайт</p>
+            </div>
+            </article>
           </li>
+
           <li class="projects-item">
+            <article class="card">
+              <div class="card-thumb">
             <img
               src="./images/projects/img-6.jpg"
               alt="книга з дизайнами"
               width="370"
               height="294"
             />
+            </div>
+            <div class="card-content">
             <h2 class="projects-title">Видання Limited Edition</h2>
             <p class="projects-subtitle">Дизайн</p>
+            </div>
+            </article>
           </li>
+
           <li class="projects-item">
+            <article class="card">
+              <div class="card-thumb">
             <img src="./images/projects/img-7.jpg" alt="лейбл" width="370" height="294" />
+            </div>
+            <div class="card-content">
             <h2 class="projects-title">Проєкт LAB</h2>
             <p class="projects-subtitle">Маркетинг</p>
+            </div>
+            </article>
           </li>
+
           <li class="projects-item">
+            <article class="card">
+              <div class="card-thumb">
             <img src="./images/projects/img-8.jpg" alt="ноубук" width="370" height="294" />
+            </div>
+            <div class="card-content">
             <h2 class="projects-title">Growing Business</h2>
             <p class="projects-subtitle">Додаток</p>
+            </div>
+            </article>
           </li>
         </ul>
+        </div>
       </section>
     </main>
 
     <footer>
-      <a class="logo" href="./index.html"><span>Web</span>Studio</a>
+      <div class="footer-container container">
+      <a class="footer-logo logo" href="./index.html"><span>Web</span>Studio</a>
       <address class="adds">
         <ul class="footer-list">
           <li class="footer-item">
@@ -154,12 +221,13 @@
             >
           </li>
           <li class="footer-cont">
-            <a class="link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+            <a class="mail-link link" href="mailto:info@devstudio.com">info@devstudio.com</a>
           </li>
           <li class="footer-cont">
-            <a class="link" href="tel:+380961111111">+38 096 111 11 11</a>
+            <a class="tel-link link" href="tel:+380961111111">+38 096 111 11 11</a>
           </li>
         </ul>
+        </div>
       </address>
     </footer>
   </body>
