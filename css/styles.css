@@ -25,9 +25,22 @@ a {
     margin: 0;
 }
 
-section {
+.section {
     padding-top: 94px;
     padding-bottom: 94px;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
 }
 
 img {
@@ -54,6 +67,12 @@ button {
 
 
 /* header */
+header {
+    background-color: var(--main-color);
+    border-bottom: 1px solid #ECECEC;
+    padding: 25px 0;
+}
+
 .header-nav {
     display: flex;
     align-items: center;
@@ -63,12 +82,9 @@ button {
 .header-container {
     align-items: center;
     display: flex;
-    height: 80px;
-    border-bottom: 1px solid #ECECEC;
 }
 
 .header-logo {
-    display: flex;
     text-align: center;
     font-family: 'Raleway';
     line-height: 1.19;
@@ -84,16 +100,13 @@ button {
 
 .header-nav-list {
     justify-content: center;
-    width: 281px;
-    height: 16px;
     display: flex;
     margin-left: 94px;
     padding-left: 0;
+    gap: 50px;
 }
 
 .header-nav-item {
-    margin-left: 94px;
-    gap: 50px;
     padding: 0;
 }
 
@@ -146,24 +159,15 @@ button {
 /* main */
 .header-section {
     height: 600px;
+    padding: 200px 0;
 }
 
 .main-container {
     padding-top: 200px;
 }
 
-header {
-    background-color: var(--main-color);
-}
-
-.header-section {
-    padding-top: 0;
-    padding-bottom: 0;
-}
-
 .hero-title {
     width: 696px;
-    height: 120px;
     font-size: 44px;
     line-height: 1.36;
     font-weight: 900;
@@ -218,7 +222,7 @@ header {
 
 /* WHAT WE ARE DOING */
 .work-section {
-    padding: 0;
+    padding-top: 0;
 }
 
 .section-title {
@@ -234,7 +238,6 @@ header {
     gap: 30px;
     justify-content: center;
     padding-left: 0;
-    padding-bottom: 94px;
 }
 
 /* TEAM */
@@ -246,8 +249,6 @@ header {
     display: flex;
     padding-left: 0;
     gap: 30px;
-    width: 270px;
-    height: 368px;
 }
 
 .team-item {
@@ -271,20 +272,27 @@ text-align: center;
 .team-subtitle {
     font-size: 16px;
     line-height: 1.18;
+    padding-bottom: 30px;
 }
 
 /* footer */
+.footer {
+    padding: 60px 0;
+}
+
 .footer-logo {
-    display: flex;
-    text-align: center;
+    display: block;
     font-family: 'Raleway';
     line-height: 1.19;
     font-size: 26px;
     color: var(--main-color);
     cursor: default;
     font-weight: 700;
-    padding-top: 60px;
     margin-bottom: 20px;
+}
+
+.item { 
+    margin-bottom: 9px;
 }
 
 .footer-logo span {
@@ -292,7 +300,6 @@ text-align: center;
 }
 
 footer {
-    height: 252px;
     background-color: var(--brand-color);
 }
 
@@ -312,10 +319,6 @@ footer {
     color: var(--text-color);
 }
 
-.tel-link {
-    padding-bottom: 60px;
-}
-
 .footer-cont>a:hover,
 .footer-cont>a:focus {
    color: var(--accent-color);
@@ -330,9 +333,9 @@ footer {
 .filters-list {
     display: flex;
     padding-left: 0;
-    margin-left: auto;
-    margin-right: auto;
     gap: 8px;
+    justify-content: center;
+    margin-bottom: 50px;
 }
 
 .filters-btn {
@@ -344,7 +347,6 @@ footer {
     font-weight: 500;
     font-family: inherit;
     padding: 6px 25px;
-    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
     border-radius: 4px;
 }
 
@@ -378,6 +380,8 @@ height: 404px;
 
 .card-content {
     padding: 20px 24px;
+    border: 1px solid #EEEEEE;
+    border-top: none;
 }
 
 .projects-title {
