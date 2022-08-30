@@ -324,6 +324,9 @@ footer {
    color: var(--accent-color);
 }
 
+.footer-cont:last-child {
+    margin-bottom: 0;
+}
 /* portfolio-filters */
 .filters-container {
     display: flex;
@@ -395,4 +398,5 @@ height: 404px;
     font-size: 16px;
     line-height: 1.87;
     margin-top: 4px;
+    color: var(--text-color);
 }
